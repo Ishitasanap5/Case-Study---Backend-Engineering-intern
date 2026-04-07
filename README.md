@@ -75,7 +75,7 @@ A backend API for managing products, inventory, and low-stock alerts across ware
 ## Database Schema
 
 The database schema is defined in `docs/Schema.swql`.
-> See [docs/Schema.swql](docs/Schema.swql) for full ER diagram and relationships.
+> See [docs/Schema.swql](docs/Schema.sql) 
 
 ---
 
