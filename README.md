@@ -1,15 +1,52 @@
+
 # Inventory Management API
 
+A backend API for managing products, inventory, and low-stock alerts across warehouses.
+
+## Table of Contents
+
+* [APIs](#apis)
+
+  * [1. Create Product](#1-create-product)
+  * [2. Low Stock Alerts](#2-low-stock-alerts)
+* [Database Schema](#database-schema)
 ## APIs
 
 ### 1. Create Product
-POST `/api/products`  
-- Body: `{ name, sku, price, warehouseId, initialQuantity?, description?, category? }`
-- Returns: `{ message: "Product created", productId }`
+
+**POST** `/api/products`
+
+**Body:**
+
+```json
+{
+  "name": "Product Name",
+  "sku": "SKU001",
+  "price": 100.50,
+  "warehouseId": 1,
+  "initialQuantity": 50,        // optional
+  "description": "Product details", // optional
+  "category": "Category Name"      // optional
+}
+```
+
+**Response:**
+
+```json
+{
+  "message": "Product created",
+  "productId": 123
+}
+```
+
+---
 
 ### 2. Low Stock Alerts
-GET `/api/companies/:companyId/alerts/low-stock`  
-- Returns: 
+
+**GET** `/api/companies/:companyId/alerts/low-stock`
+
+**Response:**
+
 ```json
 {
   "alerts": [
@@ -31,3 +68,21 @@ GET `/api/companies/:companyId/alerts/low-stock`
   ],
   "total_alerts": 1
 }
+```
+
+---
+
+## Database Schema
+
+The database schema is defined in `docs/Schema.swql`.
+> See [docs/Schema.swql](docs/Schema.swql) for full ER diagram and relationships.
+
+---
+
+## Author
+
+**Ishita Nitin Sanap**
+Email: [ishitasanap5@gmail.com](mailto:ishitasanap5@gmail.com)
+
+---
+
