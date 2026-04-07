@@ -1,4 +1,3 @@
-
 # Inventory Management API
 
 A backend API for managing products, inventory, and low-stock alerts across warehouses.
@@ -10,6 +9,7 @@ A backend API for managing products, inventory, and low-stock alerts across ware
   * [1. Create Product](#1-create-product)
   * [2. Low Stock Alerts](#2-low-stock-alerts)
 * [Database Schema](#database-schema)
+
 ## APIs
 
 ### 1. Create Product
@@ -75,14 +75,11 @@ A backend API for managing products, inventory, and low-stock alerts across ware
 ## Database Schema
 
 The database schema is defined in `docs/schema.sql`.
-> See [docs/Schema.swql](docs/schema.sql) 
-
----
+> See [docs/schema.sql](docs/schema.sql) 
 
 ## Author
 
 **Ishita Nitin Sanap**
 Email: [ishitasanap5@gmail.com](mailto:ishitasanap5@gmail.com)
 
----
 
